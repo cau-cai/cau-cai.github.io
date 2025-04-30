@@ -10,8 +10,10 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    <h2 class="post-title">{{ page.title }}</h2>
+    {% if page.description %}
+      <p class="desc">{{ page.description }}</p>
+    {% endif %}
   </header>
 
   <article>
@@ -19,7 +21,7 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-    <h2>References</h2>
+    <h3 class="post-title" style="margin-top: 4rem; margin-bottom: 0rem">References</h3>
     <div class="publications">
       {% bibliography --cited_in_order %}
     </div>

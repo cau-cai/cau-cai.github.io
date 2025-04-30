@@ -1,0 +1,21 @@
+professor:
+  - name: Jun-Hyuk Kim
+    description: "Understands AI deeply through the lens of Compression :mag:"
+    interest:
+      - Compression
+      - AI
+      - CV
+      - ML
+    email: junhyukkim@cau.ac.kr
+    homepage: https://junhyukk.github.io
+    photo: junhyuk.jpeg
+
+students:
+  - name: Pu-Ang
+    description: "Understands AI :fire:"
+    interest:
+      - CV
+      - ML
+    email: 
+    homepage: 
+    photo: puang_attention.png
