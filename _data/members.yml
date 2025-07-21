@@ -1,6 +1,6 @@
 professor:
   - name: Jun-Hyuk Kim
-    description: "Understands AI deeply through the lens of Compression :mag:"
+    description: "Gains deep insights into AI through the lens of Compression :mag:"
     interest:
       - Compression
       - AI
@@ -8,14 +8,53 @@ professor:
       - ML
     email: junhyukkim@cau.ac.kr
     homepage: https://junhyukk.github.io
-    photo: junhyuk.jpeg
+    photo: junhyuk.jpg
 
-students:
-  - name: Pu-Ang
-    description: "Understands AI :fire:"
+ms:
+  - name: Deok-Hyeon Yoon
+    description: "Explores image data insights with generative models 🌠"
     interest:
+      - Image Compression
+      - Generative Models
+      - Diffusion
+    email: ejrgus1011@cau.ac.kr
+    homepage: https://github.com/sdkldc
+    photo: deokhyeon.jpg
+
+
+undergraduate:
+  - name: Min-Gyu Chang
+    description: "Explores the foundations of AI :bulb:"
+    interest:
+      - Image Compression
       - CV
-      - ML
-    email: 
+    email: mgchang02@gmail.com
     homepage: 
-    photo: puang_attention.png
+    photo: mingyu.jpg
+
+  - name: Minwoo Park
+    description: "Views compression as a lens to understand biological complexity 🧩"
+    interest:
+      - Compression
+      - ML
+    email: minwoos22@cau.ac.kr
+    homepage: 
+    photo: minwoo.jpg
+
+  - name: Junesang Kwon
+    description: "Uncovers how causality connects everything :link:"
+    interest:
+      - AI
+      - CV
+    email: medicalissue@naver.com
+    homepage: 
+    photo: Junesang.jpg
+
+  - name: Jae-Young Yang
+    description: "Builds a deep understanding of AI based on Visual Intelligence :robot:"
+    interest:
+      - AI
+      - CV
+    email: youngyj0928@cau.ac.kr 
+    homepage: 
+    photo: jaeyoung.jpg
