@@ -32,6 +32,16 @@ undergraduate:
     homepage: 
     photo: mingyu.jpg
 
+  - name: Soon-Bum Kwon
+    description: "Finds the essence of learning by compressing information :brain:"
+    interest:
+      - AI
+      - Compression
+      - ML
+    email: sam0616@cau.ac.kr
+    homepage: 
+    photo: soonbum.jpg
+
   - name: Minwoo Park
     description: "Views compression as a lens to understand biological complexity 🧩"
     interest:
