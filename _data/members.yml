@@ -42,6 +42,16 @@ undergraduate:
     homepage: 
     photo: soonbum.jpg
 
+  - name: Sangmin Lee
+    description: "Pursues the most efficient path toward artificial intelligence 💎"
+    interest:
+      - Efficient AI
+      - Compression
+      - ML
+    email: lsm04111@naver.com
+    homepage: 
+    photo: sangmin.jpeg
+
   - name: Minwoo Park
     description: "Views compression as a lens to understand biological complexity 🧩"
     interest:
