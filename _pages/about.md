@@ -19,7 +19,7 @@ announcements:
 ---
 
 <div style="font-weight: bold"> Welcome to Compression AI (CAI) Lab!</div>
-Deparment of AI, [Chung-Ang University](https://neweng.cau.ac.kr/index.do), South Korea
+Department of AI, [Chung-Ang University](https://neweng.cau.ac.kr/index.do), South Korea
 
 
 
