@@ -71,10 +71,20 @@ undergraduate:
     photo: junesang.jpg
 
   - name: Jae-Young Yang
-    description: "Builds a deep understanding of AI based on Visual Intelligence :robot:"
+    description: "Builds a deep understanding of AI based on visual intelligence :robot:"
     interest:
       - AI
       - CV
     email: youngyj0928@cau.ac.kr 
     homepage: 
     photo: jaeyoung.jpg
+
+  - name: Yoon-Hoo Lee
+    description: "Explores balancing inductive bias and efficiency in machine learning ⚖️"
+    interest:
+      - AI
+      - ML
+      - CV
+    email: brian122990@cau.ac.kr
+    homepage: 
+    photo: yoonhoo.jpg
