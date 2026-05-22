@@ -1,6 +1,6 @@
 professor:
   - name: Jun-Hyuk Kim
-    description: "Gains deep insights into AI through the lens of Compression :mag:"
+    description: "Gaining deep insights into AI through the lens of compression :mag:"
     interest:
       - Compression
       - AI
@@ -12,7 +12,7 @@ professor:
 
 ms:
   - name: Deok-Hyeon Yoon
-    description: "Explores image data insights with generative models 🌠"
+    description: "Exploring image data insights with generative models 🌠"
     interest:
       - Image Compression
       - Generative Models
@@ -24,7 +24,7 @@ ms:
 
 undergraduate:
   - name: Min-Gyu Chang
-    description: "Explores the foundations of AI :bulb:"
+    description: "Exploring the foundations of AI :bulb:"
     interest:
       - Image Compression
       - CV
@@ -33,7 +33,7 @@ undergraduate:
     photo: mingyu.jpg
 
   - name: Soon-Bum Kwon
-    description: "Finds the essence of learning by compressing information :brain:"
+    description: "Finding the essence of learning by compressing information :brain:"
     interest:
       - AI
       - Compression
@@ -43,7 +43,7 @@ undergraduate:
     photo: soonbum.jpg
 
   - name: Sangmin Lee
-    description: "Pursues the most efficient path toward artificial intelligence 💎"
+    description: "Pursuing the most efficient path toward artificial intelligence 💎"
     interest:
       - Efficient AI
       - Compression
@@ -53,16 +53,16 @@ undergraduate:
     photo: sangmin.jpeg
 
   - name: Minwoo Park
-    description: "Views compression as a lens to understand biological complexity 🧩"
+    description: "Exploring VLMs for unified multimodal understanding 🧩"
     interest:
-      - Compression
-      - ML
+      - VLMs
+      - AI
     email: minwoos22@cau.ac.kr
     homepage: 
     photo: minwoo.jpg
 
   - name: Junesang Kwon
-    description: "Uncovers how causality connects everything :link:"
+    description: "Uncovering how causality connects everything :link:"
     interest:
       - AI
       - CV
@@ -71,7 +71,7 @@ undergraduate:
     photo: junesang.jpg
 
   - name: Jae-Young Yang
-    description: "Builds a deep understanding of AI based on visual intelligence :robot:"
+    description: "Building a deep understanding of AI based on visual intelligence :robot:"
     interest:
       - AI
       - CV
@@ -80,7 +80,7 @@ undergraduate:
     photo: jaeyoung.jpg
 
   - name: Yoon-Hoo Lee
-    description: "Explores balancing inductive bias and efficiency in machine learning ⚖️"
+    description: "Exploring balancing inductive bias and efficiency in machine learning ⚖️"
     interest:
       - AI
       - ML
