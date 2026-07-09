@@ -40,6 +40,10 @@ Department of AI, [Chung-Ang University](https://neweng.cau.ac.kr/index.do), Sou
   </ul>
 </div>
 
-<div class="theme-colored" style="margin-top: 1rem; margin-bottom: 2rem; display: inline-block; font-weight: bold"> <img src="{{ site.baseurl }}/assets/img/favicon.png" style="max-height: 1.5rem; vertical-align: top; padding-right: 0.1rem margin-bottom: 1rem"> <a href="/join"> Join our mission driven by our principles </a></div>
+<div class="theme-colored" style="margin-top: 1rem; margin-bottom: 2rem; display: inline-block; font-weight: bold; color: #e74c3c;"> 
+  <img src="{{ site.baseurl }}/assets/img/favicon.png" style="max-height: 1.5rem; vertical-align: top; padding-right: 0.1rem margin-bottom: 1rem"> 
+  <a href="/join" style="color: inherit;"> Join our mission driven by our principles 
+  </a>
+</div>
 
 <!-- <div class="theme-colored" style="margin-top: 1rem; margin-bottom: 2rem; display: inline-block; font-weight: bold"> <img src="{{ site.baseurl }}/assets/img/favicon.png" style="max-height: 1.5rem; vertical-align: top; padding-right: 0.1rem margin-bottom: 1rem"> <a href="mailto:{{ site.data.members.professor[0].email }}"> Join our mission driven by our principles </a></div> -->

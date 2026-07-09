@@ -32,25 +32,25 @@ undergraduate:
     homepage: 
     photo: mingyu.jpg
 
-  - name: Soon-Bum Kwon
-    description: "Finding the essence of learning by compressing information :brain:"
-    interest:
-      - AI
-      - Compression
-      - ML
-    email: sam0616@cau.ac.kr
-    homepage: 
-    photo: soonbum.jpg
+  # - name: Soon-Bum Kwon
+  #   description: "Finding the essence of learning by compressing information :brain:"
+  #   interest:
+  #     - AI
+  #     - Compression
+  #     - ML
+  #   email: sam0616@cau.ac.kr
+  #   homepage: 
+  #   photo: soonbum.jpg
 
-  - name: Sangmin Lee
-    description: "Pursuing the most efficient path toward artificial intelligence 💎"
-    interest:
-      - Efficient AI
-      - Compression
-      - ML
-    email: lsm04111@naver.com
-    homepage: 
-    photo: sangmin.jpeg
+  # - name: Sangmin Lee
+  #   description: "Pursuing the most efficient path toward artificial intelligence 💎"
+  #   interest:
+  #     - Efficient AI
+  #     - Compression
+  #     - ML
+  #   email: lsm04111@naver.com
+  #   homepage: 
+  #   photo: sangmin.jpeg
 
   - name: Minwoo Park
     description: "Exploring VLMs for unified multimodal understanding 🧩"
@@ -61,14 +61,14 @@ undergraduate:
     homepage: 
     photo: minwoo.jpg
 
-  - name: Junesang Kwon
-    description: "Uncovering how causality connects everything :link:"
-    interest:
-      - AI
-      - CV
-    email: medicalissue@naver.com
-    homepage: 
-    photo: junesang.jpg
+  # - name: Junesang Kwon
+  #   description: "Uncovering how causality connects everything :link:"
+  #   interest:
+  #     - AI
+  #     - CV
+  #   email: medicalissue@naver.com
+  #   homepage: 
+  #   photo: junesang.jpg
 
   - name: Jae-Young Yang
     description: "Building a deep understanding of AI based on visual intelligence :robot:"
