@@ -16,38 +16,34 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/members/";
           },
-        },{id: "nav-research",
-          title: "Research",
-          description: "Topics we&#39;ve explored, welcoming new ideas :bulb:",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/research/";
-          },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Top-tier conferences and journals have badges.",
+          description: "Top-tier AI venues are highlighted",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-contact",
-          title: "Contact",
-          description: "",
+        },{id: "nav-join-us",
+          title: "Join Us",
+          description: "Rethink AI through Compression",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/contact/";
+            window.location.href = "/join/";
           },
         },{id: "news-jun-hyuk-kim-joined-the-department-of-ai-at-chung-ang-university-as-an-assistant-professor-clap",
           title: 'Jun-Hyuk Kim joined the Department of AI at Chung-Ang University as an Assistant...',
           description: "",
-          section: "News",},{id: "news-cai-lab-s-hompage-unveiled-rocket",
-          title: 'CAI Lab’s hompage unveiled! :rocket:',
+          section: "News",},{id: "news-cai-lab-s-homepage-unveiled-rocket",
+          title: 'CAI Lab’s homepage unveiled! :rocket:',
           description: "",
           section: "News",},{id: "news-cai-lab-received-the-nrf-outstanding-young-scientist-grant",
           title: 'CAI Lab received the NRF Outstanding Young Scientist Grant. 🎉',
           description: "",
           section: "News",},{id: "news-1-paper-accepted-to-icip-2026",
           title: '1 paper accepted to ICIP 2026! 🎉',
+          description: "",
+          section: "News",},{id: "news-1-paper-accepted-to-eccv-2026-workshop",
+          title: '1 paper accepted to ECCV 2026 Workshop! 🎉',
           description: "",
           section: "News",},{id: "research-efficient-ai",
           title: 'Efficient AI',
