@@ -7,93 +7,91 @@ nav: true
 nav_order: 1
 ---
 
-<h3 class="category">Professor</h3>
-{% for member in site.data.members.professor %}
-<div class="member-card">
-  <div class="member-photo">
-    <img src="{{ site.baseurl }}/assets/img/{{ member.photo }}" class="img-fluid z-depth-1 rounded">
-  </div>
-  <div class="member-info">
-    <h4 class="post-title" style="max-width:100%; margin-bottom: 0.5rem">
-      {{ member.name }}
-    </h4>
-    <p><span class="desc"> {{ member.description }}</span></p>
-    {% if member.interest %}
-      <p>
-      {% for interest in member.interest %}
-        <span class="tag">{{interest}}</span>
-      {% endfor %}
-      </p>
-    {% endif %}
-    <p>
-        {% if member.homepage %}
-        <a href="{{ member.homepage }}"><i class="tag fas fa-home"></i></a>
-        {% endif %}
-        {% if member.email %}
-        <a href="mailto:{{ member.email }}"><i class="tag fa-solid fa-envelope"></i></a>
-        {% endif %}
-    </p>
-  </div>
-</div>
-{% endfor %}
+<div class="members-page">
+  {% assign member_groups = "Professor|professor,Ph.D. Students|phd,M.S. Students|ms,Undergraduate Students|undergraduate" | split: "," %}
+  {% for group in member_groups %}
+    {% assign group_data = group | split: "|" %}
+    {% assign group_title = group_data[0] %}
+    {% assign group_key = group_data[1] %}
+    {% assign group_members = site.data.members[group_key] %}
 
-
-<h3 class="category">M.S. Students</h3>
-{% for member in site.data.members.ms %}
-<div class="member-card">
-  <div class="member-photo">
-    <img src="{{ site.baseurl }}/assets/img/{{ member.photo }}" class="img-fluid z-depth-1 rounded">
-  </div>
-  <div class="member-info">
-    <h4 class="post-title" style="max-width:100%; margin-bottom: 0.5rem">
-      {{ member.name }}
-    </h4>
-    <p><span class="desc"> {{ member.description }}</span></p>
-    {% if member.interest %}
-      <p>
-      {% for interest in member.interest %}
-        <span class="tag">{{interest}}</span>
-      {% endfor %}
-      </p>
+    {% if group_members and group_members != empty %}
+      <section class="member-group" aria-labelledby="members-{{ group_key }}">
+        <h3 class="category" id="members-{{ group_key }}">{{ group_title }}</h3>
+        <div class="member-list">
+          {% for member in group_members %}
+            <article class="member-card">
+              <div class="member-photo">
+                <img
+                  src="{{ site.baseurl }}/assets/img/{{ member.photo }}"
+                  alt="{{ member.name }}"
+                  width="512"
+                  height="512"
+                  {% unless group_key == 'professor' %}loading="lazy"{% endunless %}
+                >
+              </div>
+              <div class="member-info">
+                <div class="member-heading">
+                  <h4 class="member-name">{{ member.name }}</h4>
+                  {% if member.homepage or member.email %}
+                    <div class="member-actions">
+                      {% if member.homepage %}
+                        <a
+                          class="member-action"
+                          href="{{ member.homepage }}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Visit {{ member.name }}'s website"
+                          title="Website"
+                        >
+                          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        </a>
+                      {% endif %}
+                      {% if member.email %}
+                        {% assign email_parts = member.email | split: '@' %}
+                        <a
+                          href="#"
+                          class="member-action member-mailto-link"
+                          data-user="{{ email_parts[0] }}"
+                          data-domain="{{ email_parts[1] }}"
+                          aria-label="Email {{ member.name }}"
+                          title="Email"
+                        >
+                          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        </a>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if member.description %}
+                  <p class="member-description">{{ member.description | emojify }}</p>
+                {% endif %}
+                {% if member.interest %}
+                  <ul class="member-interests" aria-label="Research interests">
+                    {% for interest in member.interest %}
+                      <li>{{ interest }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
     {% endif %}
-    <div>
-        {% if member.homepage %}
-        <a href="{{ member.homepage }}"><i class="tag fas fa-home"></i></a>
-        {% endif %}
-        {% if member.email %}
-        <a href="mailto:{{ member.email }}"><i class="tag fa-solid fa-envelope"></i></a>
-        {% endif %}
-    </div>
-  </div>
+  {% endfor %}
 </div>
-{% endfor %}
 
-<h3 class="category">Undergraduate Students</h3>
-{% for member in site.data.members.undergraduate %}
-<div class="member-card">
-  <div class="member-photo">
-    <img src="{{ site.baseurl }}/assets/img/{{ member.photo }}" class="img-fluid z-depth-1 rounded">
-  </div>
-  <div class="member-info">
-    <h4 class="post-title" style="max-width:100%; margin-bottom: 0.5rem">
-      {{ member.name }}
-    </h4>
-    <p><span class="desc"> {{ member.description }}</span></p>
-    {% if member.interest %}
-      <p>
-      {% for interest in member.interest %}
-        <span class="tag">{{interest}}</span>
-      {% endfor %}
-      </p>
-    {% endif %}
-    <div>
-        {% if member.homepage %}
-        <a href="{{ member.homepage }}"><i class="tag fas fa-home"></i></a>
-        {% endif %}
-        {% if member.email %}
-        <a href="mailto:{{ member.email }}"><i class="tag fa-solid fa-envelope"></i></a>
-        {% endif %}
-    </div>
-  </div>
-</div>
-{% endfor %}
+<script>
+  (function () {
+    var links = document.querySelectorAll('.member-mailto-link');
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var user = link.getAttribute('data-user');
+        var domain = link.getAttribute('data-domain');
+        window.location.href = 'mailto:' + user + '@' + domain;
+      });
+    });
+  })();
+</script>

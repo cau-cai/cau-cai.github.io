@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Top-tier conferences and journals have badges.
+description: Top-tier AI venues are highlighted
 nav: true
 nav_order: 3
 ---

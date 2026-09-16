@@ -2,11 +2,24 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h2 class="post-title">
-      <span class="theme-colored font-weight-bold">{{ site.first_name }}</span> <span class="font-weight-bold">{{ site.middle_name }}</span> {{ site.last_name }}
-    </h2>
-    <p class="desc">{{ page.subtitle }}  :mag: </p>
+  <header class="post-header{% if page.hero_image %} about-hero{% endif %}">
+    <div class="about-hero__copy">
+      <div class="about-eyebrow">Department of AI &middot; Chung-Ang University</div>
+      <h2 class="post-title font-weight-bold">
+        <span class="theme-colored">Compression</span> AI Lab
+      </h2>
+      <p class="desc">{{ page.subtitle }} </p>
+    </div>
+    {% if page.hero_image %}
+      <!-- Temporary hero visual: replace with the actual CAI Lab group photo when available. -->
+      <figure class="about-hero__photo">
+        <img src="{{ '/assets/img/' | append: page.hero_image | relative_url }}" alt="{{ page.hero_image_alt | default: 'CAI Lab group photo' }}" width="720" height="480">
+      </figure>
+    {% endif %}
+    <a class="about-hero__cta about-cta about-cta--primary" href="{{ '/join/' | relative_url }}">
+      Join Us
+      <span class="about-cta__arrow" aria-hidden="true">&rarr;</span>
+    </a>
   </header>
 
   <article>
@@ -37,8 +50,8 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit" class="post-title font-weight-bold">News</a>
+      <h2 class="about-news-title">
+        <span class="post-title font-weight-bold" style="color: inherit; font-size: inherit;">News</span>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}

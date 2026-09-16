@@ -1,6 +1,6 @@
 professor:
   - name: Jun-Hyuk Kim
-    description: "Gaining deep insights into AI through the lens of compression :mag:"
+    description: "Seeking deeper insights into AI through compression :mag:"
     interest:
       - Compression
       - AI
@@ -12,22 +12,29 @@ professor:
 
 ms:
   - name: Deok-Hyeon Yoon
-    description: "Exploring image data insights with generative models 🌠"
+    description: "Exploring efficient representation and meaningful learning for vision-language models 🌠"
     interest:
-      - Image Compression
-      - Generative Models
-      - Diffusion
+      - Long-Tail Learning
+      - Efficient Inference
+      - Representation Learning
     email: ejrgus1011@cau.ac.kr
     homepage: https://github.com/sdkldc
     photo: deokhyeon.jpg
-
+  - name: Taemin Hong
+    description: "Making segmentation models lighter without losing the tail :zap:"
+    interest:
+      - Model Compression
+      - Medical Imaging
+      - Efficient ViT
+    email: taemin2271@gmail.com
+    photo: taemin.jpg
 
 undergraduate:
   - name: Min-Gyu Chang
-    description: "Exploring the foundations of AI :bulb:"
+    description: "Exploring representation learning for generalized AI models 💫"
     interest:
-      - Image Compression
-      - CV
+      - Representation Learning
+      - Vision-Language Alignment
     email: mgchang02@gmail.com
     homepage: 
     photo: mingyu.jpg
@@ -52,14 +59,14 @@ undergraduate:
   #   homepage: 
   #   photo: sangmin.jpeg
 
-  - name: Minwoo Park
-    description: "Exploring VLMs for unified multimodal understanding 🧩"
-    interest:
-      - VLMs
-      - AI
-    email: minwoos22@cau.ac.kr
-    homepage: 
-    photo: minwoo.jpg
+  # - name: Minwoo Park
+  #   description: "Exploring VLMs for unified multimodal understanding 🧩"
+  #   interest:
+  #     - VLMs
+  #     - AI
+  #   email: minwoos22@cau.ac.kr
+  #   homepage:
+  #   photo: minwoo.jpg
 
   # - name: Junesang Kwon
   #   description: "Uncovering how causality connects everything :link:"
@@ -71,10 +78,11 @@ undergraduate:
   #   photo: junesang.jpg
 
   - name: Jae-Young Yang
-    description: "Building a deep understanding of AI based on visual intelligence :robot:"
+    description: "Understanding how AI represents and reasons about the visual world 🌐"
     interest:
-      - AI
-      - CV
+      - Computer Vision
+      - Spatial Intelligence
+      - Interpretability
     email: youngyj0928@cau.ac.kr 
     homepage: 
     photo: jaeyoung.jpg

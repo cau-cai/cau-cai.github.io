@@ -15,8 +15,8 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
-          <tr style="color: #212529">
-            <th scope="row" style="width: 10%; text-align: right;">
+          <tr>
+            <th scope="row" style="width: 10%; text-align: right; color: var(--global-text-color-light); font-weight: 600;">
               {% assign month = item.date | date: '%b' %}
               {% if month == 'May' %}
                 {{ month }} {{ item.date | date: '%Y' }}
@@ -24,7 +24,7 @@
                 {{ item.date | date: '%b. %Y' }}
               {% endif %}
             </th>
-            <td>
+            <td style="color: var(--global-text-color);">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}

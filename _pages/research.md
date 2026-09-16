@@ -3,7 +3,7 @@ layout: page
 title: Research
 permalink: /research/
 description: "Topics we've explored, welcoming new ideas :bulb:"
-nav: true
+nav: false
 nav_order: 2
 display_categories: 
 horizontal: false
