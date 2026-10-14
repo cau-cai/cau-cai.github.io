@@ -39,6 +39,15 @@ undergraduate:
     homepage: 
     photo: mingyu.jpg
 
+  - name: Joonyoung Jo
+    description: "Building robot agents using vision, language, and past experience to make reliable decisions 🤖"
+    interest:
+      - Vision-Language-Action
+      - Reinforcement Learning
+    email: joon0zo1022@gmail.com
+    homepage: https://jun0zo.github.io/
+    photo: joonyoung.jpg
+
   # - name: Soon-Bum Kwon
   #   description: "Finding the essence of learning by compressing information :brain:"
   #   interest:
@@ -96,3 +105,12 @@ undergraduate:
     email: brian122990@cau.ac.kr
     homepage: 
     photo: yoonhoo.jpg
+
+  - name: Yun-Hu Ko
+    description: "Exploring the mathematical foundations of efficient inference in vision models :triangular_ruler:"
+    interest:
+      - Mathematical Foundations
+      - Computer Vision
+      - Efficient Inference
+    email: yunhu0216@gmail.com
+    photo: yunhu.jpg
